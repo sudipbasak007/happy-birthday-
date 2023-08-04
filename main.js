@@ -37,7 +37,7 @@ window.onload = () => {
         alert("ফোন ঝাঁকুনি দিন ")
         sensor.start()
         sensor.onreading = () => {
-         if ((sensor.x > 0 || sensor.x < 0) && (sensor.y > 0 || sensor.y < 0))
+         if ((sensor.x > 0 || sensor.x < 0) || (sensor.y > 0 || sensor.y < 0))
            showGift()
       }
     },2000)
